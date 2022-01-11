@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ye function ha simple phly wala argument build in function ha is mein sstring value ni dy skty
+        function sum(a,b)
+        {
+    let add= 0;
+            for (let i in arguments) {
+                add=add+arguments[i];
+                
+            }
+            document.write(add);
+            
+        }
+        sum(20,30);
+
+        //yaha hum string b ly skty or rest operator use kiya ha three dot lga k rest perator use kiya
+        //yaha hum mulitiple value add kr skty
+        function summing(a,...b)
+        {
+    let add= 0;
+            for (let i in b) {
+                add=add+b[i];
+                
+            }
+            document.write(add);
+            
+        }
+        sum(20,30);
+        sum(20,30,11);
+    </script>
+</body>
+</html>

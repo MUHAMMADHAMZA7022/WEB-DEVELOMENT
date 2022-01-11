@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //ye porana method ha 
+        var a="Ashraf <br>";
+        var c= "Hamza"+a;
+        document.write(c);
+        //ye new method ha is mein hum kam easy krty do string ko jorty
+        var d="Ashraf<br>";
+     document.write(`Hamza ${d}`);
+
+     //ye function use kiya nechy
+     var fname="hamza";
+     var lname="ashraf";
+     function fullname(fname, lname)
+     {
+         return `${fname} ${lname}`;
+     };
+    
+     //function call ki
+     var f=document.write(fullname(fname,lname))
+
+     let sum=(name, ...args)=>
+     {
+      document.write(`<br>Name is:${name}  `)
+        let summ=0;
+       for(let i in args)
+       {
+           summ+=args[i]
+       }
+         document.write(`Sum is : ${summ}`)
+       }
+       sum("Hamza",20,20)
+    </script>
+</body>
+</html>

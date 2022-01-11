@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js.js"></script>
+</head>
+<body>
+    <form action="" id="submit">
+    <label for="">Name</label>
+    <input type="text" id="name">
+    <label for=""> country</label>
+    <select name="" id="country">
+        <option value="pakistan">pakistan</option>
+        <option value="India">India</option>
+       
+        <option value="Saudia">Saudia</option>
+    </select>
+    <input type="submit" id="submit">
+</form>
+    <script>
+        //form event
+        $(document).ready(function()
+        {
+         //focus event
+         $("#name").focus(function(){
+            $("#name").css("background-color","green")
+         });
+         //focus hatany kliye blur
+         $("#name").blur(function(){
+            $("#name").css("background-color","")
+         });
+          //chnge event
+         $("#country").change(function(){
+            $("#country").css("background-color","pink")
+         });
+         
+          //select event
+          $("#name").select(function(){
+            $("#name").css("background-color","yellow")
+         });
+         
+
+           //submit event
+           $("#submit").submit(function(){
+              alert("Successful");
+         });
+         
+         
+        });
+    </script>
+</body>
+</html>

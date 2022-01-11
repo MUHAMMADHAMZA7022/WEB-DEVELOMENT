@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js.js"></script>
+</head>
+<body>
+<button id="btn-1">Slide up</button>
+<button id="btn-2">Slide Down</button>
+<button id="btn-3">Slide toogle</button>
+
+
+
+<div class="box1"><h1>Hamza</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus unde blanditiis quam culpa itaque tempora expedita et corrupti hic sapiente.</p></div>
+   <script>
+      //fadein fade out fade toogle ye same ha hide show toogle trha
+        $(document).ready(function()
+    {
+        $("#btn-1").click(function()
+        {
+            
+        $(".box1").slideUp();//ye 3000 animation di ha
+        });
+
+        $("#btn-2").click(function()
+        {
+            
+        $(".box1").slideDown();
+        });
+
+        $("#btn-3").click(function()
+        {
+            
+        $(".box1").slideToggle();
+     
+        });
+
+
+        });
+    </script>
+</body>
+</html>

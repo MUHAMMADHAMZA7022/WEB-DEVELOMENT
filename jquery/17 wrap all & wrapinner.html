@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js.js"></script>
+</head>
+<body>
+<button id="btn-1">WrapAll</button>
+<button id="btn-2">wrapinner</button>
+
+<div class="box1"><h1>Hamza</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus unde blanditiis quam culpa itaque tempora expedita et corrupti hic sapiente.</p></div>
+   <h1></h1>
+   <script>
+      //wrapall sb select krny k liye
+        $(document).ready(function()
+        {
+          $("#btn-1").click(function()
+          {
+//ye  paragraph shift kr diya h1 tag mein
+            $(" p").wrapAll("<h1></h1>");
+          });
+
+
+          $("#btn-2").click(function()
+          {
+//ye andr tag lgny k liye hota
+            $(".box1 p").wrapInne("<span></span")
+          });
+        });
+    </script>
+</body>
+</html>

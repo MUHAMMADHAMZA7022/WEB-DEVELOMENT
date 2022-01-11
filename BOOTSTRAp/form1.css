@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.conatiner{
+    border: 3px solid black
+}
+.row{
+    border: 3px solid blue
+}
+.col-md-6{
+    border: 3px solid gold;
+}

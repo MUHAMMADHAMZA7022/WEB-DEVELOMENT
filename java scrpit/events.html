@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body onload="load()">
+    <script>
+        function clik()
+        {
+            document.write("click event click krny py ata")
+        }
+        //yaha py event lgya button tag py jesy hi click ho ga sath hi event a jaye ga
+
+
+        
+        function double()
+        {
+            document.write(" event double click krny py aya")
+        }
+        //yaha py event lgya button tag py jesy hi  double click ho ga sath hi event a jaye ga
+
+        function rght()
+        {
+            document.write(" event right click krny py aya")
+        }
+        function mse()
+        {
+            document.write(" ye mouser hover event ha")
+        }
+
+        function mseout()
+        {
+            document.write(" ye mouser hover sy jb out howatb aya event ha")
+        }
+
+        function msedw()
+        {
+            document.write(" ye mouser down sy aya event ")
+        }
+        function mseup()
+        {
+            document.write(" ye mouser up sy aya event ")
+        }
+        function load()
+        {
+            alert(" ye page load hoty sath aya or ye sirf body tag py lgta")//unload b aisy hi use hona ha same resize b same aisy use hona or scrol b
+        }
+    </script>
+    <button onclick="clik()" >ONCLICK</button> 
+    <p ondblclick="double()">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, ipsa vitae!</p>
+    <a oncontextmenu="rght()">Right Click</a>
+    <button onmouseenter="mse()">Mouse Hover</button>
+    <button onmouseout="mseout()">Mouse out</button>
+    <button onmousedown="msedw()">Mouse down</button>
+    <button onmouseup="mseup()">Mouse up</button>
+    
+    
+    
+</body  >
+</html>

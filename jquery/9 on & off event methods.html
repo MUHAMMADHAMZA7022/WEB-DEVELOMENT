@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js.js"></script>
+</head>
+<body>
+<div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui amet obcaecati, sequi nesciunt accusamus adipisci dicta similique animi nihil commodi tempore doloremque error eveniet est expedita possimus dolorem sapiente suscipit, reprehenderit ratione omnis architecto dolore! Fugiat iure possimus odit unde cumque aspernatur necessitatibus voluptates, explicabo repellat aperiam? Officia reprehenderit harum esse aperiam consequuntur odio iure rerum quae? Unde ducimus veniam dicta, repudiandae fuga eos cupiditate natus vitae laudantium nostrum veritatis tenetur in consectetur. Ea ratione blanditiis, reiciendis facere repellendus vitae corporis, odit aperiam placeat sequi, quam facilis iure earum porro asperiores aspernatur quibusdam provident quaerat repudiandae. Adipisci ut cupiditate distinctio praesentium. Asperiores earum tempore nemo dolores exercitationem quo nobis quidem quis excepturi harum reprehenderit in, hic error beatae consequuntur praesentium quod eum maxime nulla! Iste sint dignissimos amet eius necessitatibus officiis, perspiciatis explicabo quis provident aspernatur, atque dolores tempore autem sed adipisci illum pariatur possimus id. Praesentium error qui blanditiis soluta exercitationem corporis, neque nesciunt accusamus labore vero! Quidem quae, soluta veritatis maxime, sint temporibus nulla quasi cumque totam tenetur repudiandae velit provident. Consequatur iure eius aliquid ad, nihil et doloremque quam accusamus excepturi laudantium. Officiis sequi, enim, illum architecto doloremque inventore nobis quos voluptate nemo cum, ipsa quasi eos?
+</div>
+  
+    <script>
+             //on methods
+        $(document).ready(function()
+        {
+            $(".box1").on({"click":function(){
+
+             $(this).css("background-color","green")
+             },
+
+             "mouseover":function(){
+                 
+                 $(this).css("background-color","blue")
+                 },
+
+                 "mouseout":function(){
+                 
+                 $(this).css("background-color","yellow")
+                 }
+                
+            });
+            $(".box1").off("click");
+      
+        });
+
+    </script>
+</body>
+</html>

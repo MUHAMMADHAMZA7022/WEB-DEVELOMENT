@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a=[11,221,32,41,11];
+        var b=a.find(fn);
+        document.write(b +"<br>");
+//ye first value check krta agr value mil gae to wo print kr dy ga k han ye ha baki check ni karey ga
+        function fn(value)
+        {
+          return value>=18;
+        }
+    //y findindexhamein index deta ha jo b first py a gya bs os ka index dy dey ga
+    var b=a.findIndex(fn);
+    document.write(b);
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js.js"></script>
+</head>
+<body>
+    <div class="thead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta dolore ea odit, deserunt architecto beatae non ex suscipit impedit velit at laudantium, consectetur illo, delectus magni ducimus facilis accusamus. Labore?</div>
+    <script>
+//keyboard event
+        $(document).ready(function()
+        {
+      //keypress event
+            $("body").keypress(function()
+            {
+                $(this).css("background-color","green");
+            });
+            //keyup event
+            $("body").keyup(function()
+            {
+                $(this).css("background-color","orange");
+            });
+             //keydown event
+             $("body").keydown(function()
+            {
+                $(this).css("background-color","blue");
+            });
+        });
+    </script>
+</body>
+</html>

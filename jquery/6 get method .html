@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js.js"></script>
+</head>
+<body>
+    <div class="box1"><p>dddddddddddddddddddddddddddddddd</p><span>ssss</span><ul>
+        <li></li>
+    </ul>
+    </div>
+    <script>
+        //html k liye get krny k liye jes tag ki krni
+        $(document).ready(function()
+        {
+        var a=$(".box1").html();
+        console.log(a); 
+        //text get krny k liye
+        var b=$(".box1").text();
+        console.log(b); 
+       
+        //attrtibute hamein btata k kia attribute a rhy class lgae jo hum ny
+        var c=$(".box1").attr("class");
+        console.log(c); 
+
+        ///vqariable use
+        //ye form py use hota submit py krty howy
+         
+        });
+    </script>
+</body>
+</html>

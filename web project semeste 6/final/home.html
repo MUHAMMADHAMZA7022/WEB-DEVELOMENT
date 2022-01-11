@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hostel Website</title>
+    <link rel="stylesheet" href="bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body onload="slider()">
+    <div class="container-fluid ">
+        <div class="header" id="home">
+            <div class="row  justify-content-around align-items-center ">
+                <div class="col-lg-4 col-xl-3">
+                    <h1 class="text-center "> Hamza Hostel</h1>
+                </div>
+                <div class="col-lg-8  col-xl-9 justify-content-center  ">
+                    <ul class="nav  unstyled justify-content-center">
+                        <li class="nav-item ml-md-1 ml-lg-2"><a href="home.html" class="nav-link">HOME</a></li>
+                        <li class="nav-item ml-md-1 ml-lg-2"><a href="#fac" class="nav-link">OUR FACILITIES</a></li>
+                        <li class="nav-item ml-md-1 ml-lg-2"><a href="#conn" class="nav-link">CONTACT</a></li>
+                        <li class="nav-item ml-md-1 ml-lg-2"><a href="#testt" class="nav-link">Testmonials</a></li>
+
+                        <li class="nav-item"><a href="#p" class="nav-link">PRICING</a></li>
+                        <li class="nav-item"><a class="nav-link menu" onclick="openmenu()">RECORDS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lay" id="mymenu">
+                    <a href="" class="closemenu" onclick="closemenu()">Close</a>
+                    <div class="lay-content ">
+                        <a href="insert.html">Insert</a>
+                        <a href="search.html">SEARCH</a>
+                        <a href="update.html">UPDATE</a>
+                        <a href="delete.html">DElETE</a>
+                    </div>
+                </div>
+
+
+
+                <div class="banner ">
+                    <div class="col-12 text-center">
+                        <h3 class="">Best Hostel For BOYS</h3>
+                        <div class="col-12 text-center">
+                            <p>One of the best hostel in LAhore 🙂 Neat and clean hostel and cooperative staff</p>
+                        </div>
+                        <a href="#fac"> <button class="text-center butn "><span></span> FACILITIES</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="slider " id="galleryy">
+            <h6 class="display-4 text-center p-2">Media Gallery</h6>
+            <div class="row text-center justify-content-around slide">
+                <div class="col-12">
+                    <img src="images/hostel2.jpg " class="img-fluid" id="slideimg">
+                </div>
+            </div>
+        </div>
+
+        <h6 class="display-4 text-center p-2 " id="p">Pricing Strategy</h6>
+        <div class="row rooms justify-content-around">
+            <div class="price1 col-sm-4 text-center text-light d-flex flex-column">
+                <div>
+                    <h3 class="text-black mt-4">Single Room</h3>
+                </div>
+                <div>
+                    <h5 class=" text-black">PKR 2000/-</h5>
+                </div>
+                <div>
+                    <p class="lead ">
+
+                    <p>High Speed Fiber Internet</p>
+                    <p>Geyser</p>
+                    <p>UPS</p>
+                    <p>Filtered Water</p>
+                    <p>Electricity Bills</p>
+                    <p>AC</p>
+                    <p>LCD TV</p>
+                    </p>
+                </div>
+                <div class="call">
+                    <a href="tel:+923037022229"> <button class="butn">Call NOW</button></a>
+                </div>
+            </div>
+
+            <div class="price1 col-sm-4 text-center text-light d-flex flex-column">
+                <div>
+                    <h3 class="text-black mt-4">Two Room</h3>
+                </div>
+                <div>
+                    <h5 class=" text-black">PKR 3000/-</h5>
+                </div>
+                <div>
+                    <p class="lead ">3 times meals
+                    <p>Laundry</p>
+                    <p>High Speed Fiber Internet</p>
+                    <p>Geyser</p>
+                    <p>UPS</p>
+                    <p>Filtered Water</p>
+                    <p>Electricity Bills</p>
+                    <p>AC</p>
+                    <p>LCD TV</p>
+                    </p>
+                </div>
+                <div class="call">
+                    <a href="tel:+923037022229"> <button class="butn">Call NOW</button></a>
+                </div>
+            </div>
+            <div class="price1 col-sm-4 text-center text-light d-flex flex-column">
+                <div>
+                    <h3 class="text-black mt-4">Three Room</h3>
+                </div>
+                <div>
+                    <h5 class=" text-black">PKR 4000/-</h5>
+                </div>
+                <div>
+                    <p class="lead ">3 times meals
+                    <p>Laundry</p>
+                    <p>High Speed Fiber Internet</p>
+                    <p>Geyser</p>
+                    <p>UPS</p>
+                    <p>Filtered Water</p>
+                    <p>Electricity Bills</p>
+                    <p>AC</p>
+                    <p>LCD TV</p>
+                    </p>
+                </div>
+                <div class="call">
+                    <a href="tel:+923037022229"> <button class="butn">Call NOW</button></a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="facilities" id="fac">
+            <h6 class="text-center display-4 p-2 ">OUR FACILITIES</h6>
+            <div class="row  data m-0 justify-content-around">
+                <div class="col-sm-4  card text-center ">
+                    <div class="content col-sm-3 ">
+                        <div class="box1 col-12">
+                            <img src="./images/laundry.jfif" alt="" class="img-fluid">
+                        </div>
+                        <div class=" box2 col-12 text-center">
+                            <h3 class=" text-center">LAUNDRY FACILITIES</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4  card text-center ">
+
+                    <div class="content col-sm-3 ">
+                        <div class="box1 col-12">
+                            <img src="./images/room.png" alt="" class="img-fluid">
+                        </div>
+                        <div class=" box2 col-12 text-center">
+                            <h3 class=" text-center">ROOM SERVICES</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4  card text-center ">
+
+                    <div class="content col-sm-3 ">
+                        <div class="box1 col-12">
+                            <img src="./images/mess.jfif" alt="" class="img-fluid">
+                        </div>
+                        <div class=" box2 col-12 text-center">
+                            <h3 class=" text-center">MESS 3 TIMES</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4  card text-center ">
+
+                    <div class="content col-sm-3 ">
+                        <div class="box1 col-12">
+                            <img src="./images/la.jfif" alt="" class="img-fluid">
+                        </div>
+                        <div class=" box2 col-12 text-center">
+                            <h3 class=" text-center">LUGGAGE STORAGE</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4  card text-center ">
+
+                    <div class="content col-sm-3 ">
+                        <div class="box1 col-12">
+                            <img src="./images/ac.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class=" box2 col-12 text-center">
+                            <h3 class=" text-center">AIR CONDITION ROOM</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4  card text-center ">
+
+                    <div class="content col-sm-3 ">
+                        <div class="box1 col-12">
+                            <img src="./images/tu.jfif" alt="" class="img-fluid">
+                        </div>
+                        <div class=" box2 col-12 text-center">
+                            <h3 class=" text-center">TOURS/TRAVEL DESK</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4  card text-center ">
+
+                    <div class="content col-sm-3 ">
+                        <div class="box1 col-12">
+                            <img src="./images/bttt.png" alt="" class="img-fluid">
+                        </div>
+                        <div class=" box2 col-12 text-center">
+                            <h3 class=" text-center">UPS (24 HOURS/7)</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4  card text-center ">
+
+                    <div class="content col-sm-3 ">
+                        <div class="box1 col-12">
+                            <img src="./images/wifi.jfif" alt="" class="img-fluid">
+                        </div>
+                        <div class=" box2 col-12 text-center">
+                            <h3 class=" text-center">FREE WIFI</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4  card text-center ">
+
+                    <div class="content col-sm-3 ">
+                        <div class="box1 col-12">
+                            <img src="./images/tv.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class=" box2 col-12 text-center">
+                            <h3 class=" text-center">TV CABEL</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <h6 class="text-center display-4 p-2 ">Testmonials</h6>
+        <div class="test" id="testt">
+
+            <div class="row tt ">
+                <div class="col-sm-6  part1 text-light mt-4 text-center d-flex flex-column">
+                    <div>
+                        <p class="lead">services are very good and rooms are so beautiful and decorated ..we are feeling
+                            as we are at our home.</p>
+                    </div>
+                    <div class="call"><img src="images/test1.jpg" class="img-fluid">
+                        <h5 class="text-black">Muhammad Hamza</h5>
+                    </div>
+
+                </div>
+                <div class="col-sm-6 part1 text-light mt-4 text-center d-flex flex-column">
+                    <div>
+                        <p class="lead">I had spent a night in master suit @ 2500RS. Staff services can't be expressed
+                            just in word. Comfortable living away from home</p>
+                    </div>
+                    <div><img src="images/test1.jpg" class="img-fluid">
+                        <h5 class="text-black">Sameer Ashraf</h5>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="contact" id="conn">
+            <h6 class="test-center display-5 p-2 text-center">Contact us</h6>
+            <div class="row  justify-content-center text-center contacts m-0">
+                <div class="col-sm-12 col-md-4 order-sm-3 cn1">
+                    <h6 class="">About </h6>
+                    <div class="col-12 mt-5">
+                        <img src="./images/slider1.jpg" alt="" class="img-fluid pb-2">
+                        <span>"Description about your hotel"</span>
+                        <p> Feel like home.</p>
+                        <button>Read More</button>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 order-2 cards text-center cn1">
+                    <h6 class="">Number</h6>
+
+                    <div class="content col-sm-4 mt-5">
+                        <div class="box1 col-12">
+                            <img src="./images/call.jpg" alt="" class="img-fluid">
+
+                        </div>
+                        <div class=" box2 col-12 ">
+                            <a href="tel:+92303702229">
+                                <h3 class=" text-center">+923037022229<br>Muhammad Hamza</h3>
+                            </a>
+                        </div>
+                    </div>
+
+
+
+
+
+                </div>
+                <div class="col-sm-6 col-md-4 order-1 cn1">
+                    <h6 class="">Information </h6>
+                    <div class="company_address mt-2">
+
+                        <p>address,</p>
+                        <p>street address,</p>
+                        <p>Islam pura lAhore</p>
+                        <p>Phone:(0303) 70222229</p>
+                        <p>Fax: (542) 0022300</p>
+                        <p>Email: <span>Muhammadhamza7022<br>@gmail.com</span></p>
+                        <p>Follow us on: <span>Facebook</span>, <span>Twitter</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="row ft m-0 text-black ">
+                <div class="col-12 text-center mt-3 ">
+                    <h6 class="text-center display-5 mb-5  "> Hamza Hostel</h6>
+                </div>
+                <div class=" col-lg-6 justify-content-center">
+                    <ul class="nav  unstyled justify-content-center ">
+                        <li class="nav-item"><a href="home.html" class="nav-link ">HOME</a></li>
+                        <li class="nav-item"><a href="#fac" class="nav-link">OUR FACILITIES</a></li>
+                        <li class="nav-item"><a href="#conn" class="nav-link">CONTACT</a></li>
+                        <li class="nav-item"><a href="#testt" class="nav-link">Testmonials</a></li>
+
+                        <li class="nav-item"><a href="#p" class="nav-link">PRICING</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 text-center ">
+                    <ul class="fb nav justify-content-center">
+                        <li class="icon nav-item"><a class="nav-link  "><i class="fab fa-facebook-f"></i></a></li>
+                        <li class="icon nav-item"><a class="nav-link  "><i class="fab fa-twitter-square"></i></a></li>
+                        <li class="icon nav-item"><a class="nav-link  "> <i class="fab fa-whatsapp"></i></a></li>
+
+                    </ul>
+                </div>
+                <div class="  col-lg-3 text-center text-black">
+                    <p>Hamza Hostel 2021.All rights reserved.Designed by Muhammad Hamza</p>
+                </div>
+            </div>
+        </footer>
+
+
+    </div>
+
+    <script>
+        function openmenu() {
+            document.getElementById("mymenu").style.width = "100%";
+        }
+        function closemenu() {
+            document.getElementById("mymenu").style.width = "0%";
+        }
+
+        var slideimg = document.getElementById("slideimg");
+        var images = new Array(
+            " images/hostel1.jpg",
+            " images/hostel3.jpg",
+            " images/hostel4.jpg",
+            " images/hostel5.jpg"
+
+        );
+        var len = images.length;
+        var i = 0;
+        function slider() {
+            if (i > len - 1) {
+                i = 0;
+            }
+            slideimg.src = images[i];
+            i++;
+            setTimeout('slider()', 3000)
+        }
+
+    </script>
+    <script src="https://kit.fontawesome.com/25f28e82e4.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

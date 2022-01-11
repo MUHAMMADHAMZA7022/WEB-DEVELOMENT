@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crud System javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div>
+        <h1>Student Management System</h1>
+        <p>we will store information in browser using javascript.we will also perfom add,delete and update</p>
+    </div>
+</div>
+    <div class="section">
+        <div>
+        <h2>Student Information</h2>
+        
+        
+        <form onsubmit="return false" >
+            
+            <label for="txtid">ID<br></label>
+            <input type="text" id="txtid" required placeholder="Enter ID"><br>
+          
+         
+            <label for="txtname">Name<br></label>
+            <input type="text" id="txtname" required placeholder="Enter Name"><br>
+           
+         
+            <label for="txtrollno">Roll No<br></label>
+            <input type="text" id="txtrollno" required placeholder="Enter Roll NO"><br>
+         
+          
+            <label for="txtemail">Email<br></label>
+            <input type="email" id="txtemail" required  placeholder="Enter Email"><br>
+       
+           
+            <label for="txtmarks">Marks<br></label>
+            <input type="text" id="txtmarks" required placeholder="Enter Marks"><br><br>
+           
+          
+            <input id="btn-insert" type="submit" onclick="insert()" > 
+            <button id="btn-edit" type="submit" onclick="update()" sinfo="" style="display: none;">Edit</button>
+           </form>
+        </div>
+
+
+        <div class="section">
+ <h2>Student Details</h2>
+       <table>
+           <thead>
+               <tr>
+                   <th>ID</th>
+                   <th>Name</th>
+                   <th>Roll No</th>
+                   <th>Email</th>
+                   <th>Marks</th>
+               </tr>
+           </thead>
+           <tbody id="tbl">
+
+           </tbody>
+       </table>
+    </div>
+    </div>
+
+
+<script>
+        //object
+        var student={info:0, id:"",name:"", rollno:"", email:"", marks:""};
+    var students=[];//array
+    i=0;
+   function insert()
+   {
+       student={};//object intialize
+        i++;
+       student.info = i;
+       student.id=document.getElementById('txtid').value;
+       student.name=document.getElementById('txtname').value;
+       student.rollno=document.getElementById('txtrollno').value;
+       student.email=document.getElementById('txtemail').value;
+       student.marks=document.getElementById('txtmarks').value;
+
+       if(required_data(student))
+     {
+         students.push(student);//add record array
+         readtable();
+         cleardata();
+     
+       }
+     
+   }
+
+   ///read table foreach loop
+  function readtable()
+   {
+       var table=""
+       for(var s of students)
+       {
+            table+=`<tr>
+                       <td>${s.id}</td>
+                       <td>${s.name}</td>
+                       <td>${s.rollno}</td>
+                       <td>${s.email}</td>
+                       <td>${s.marks}</td>
+                       <td><a href="#" onclick=" edit(${s.info})">Edit</a></td>
+                       <td><a href="#" onclick=" delete_rocord(${s.info})">Delete</a></td>
+                     
+                   </tr>`;        
+       }
+       document.getElementById('tbl').innerHTML = table;
+      
+   }
+
+   function edit(info)
+    {
+        for(var s of students)
+        {
+            if(s.info==student.info)
+            {
+       document.getElementById('txtid').value= s.id;
+       document.getElementById('txtname').value=s.name;
+      document.getElementById('txtrollno').value= s.rollno;
+     document.getElementById('txtemail').value=s.email;
+     document.getElementById('txtmarks').value=s.marks;
+
+     document.getElementById("btn-edit").removeAttribute('style');
+     document.getElementById("btn-edit").setAttribute('sinfo',s.info);
+     document.getElementById("btn-insert").setAttribute("style",'display:none');
+            }
+        }
+    }
+    
+    function update()
+    {
+   student={};
+   student.info= parseInt(document.getElementById("btn-edit").getAttribute('sinfo'));
+        student.id=document.getElementById('txtid').value;
+       student.name=document.getElementById('txtname').value;
+       student.rollno=document.getElementById('txtrollno').value;
+       student.email=document.getElementById('txtemail').value;
+       student.marks=document.getElementById('txtmarks').value;
+       
+       if(required_data(student))
+     {
+       for(var s of students)
+       {
+           if(s.info==student.info)
+           {
+              var index=students.indexOf(s);
+              students[index]=student;
+               break;
+           }
+       }
+       readtable();
+       document.getElementById("btn-edit").setAttribute("style",'display:none');
+       document.getElementById("btn-insert").removeAttribute('style');
+    
+       cleardata();
+    }
+       
+    }
+
+   function delete_rocord(info)
+   {
+      for(var s of students)
+      {
+          if(s.info==info)
+          {
+              var index=students.indexOf(s);
+              students.splice(index, 1);
+              break;
+          }
+      }
+      readtable();
+   }
+   function cleardata()//clear krta record insert kr k
+   {
+       document.getElementById('txtid').value ="";
+       document.getElementById('txtname').value ="";
+       document.getElementById('txtrollno').value ="";
+       document.getElementById('txtemail').value ="";
+        document.getElementById('txtmarks').value ="";
+   }
+   function required_data(std)// required fill ho gi to data show ho ga
+   {
+       if(std.id=="")
+       {
+           
+          return false;
+       }
+       if(std.name=="")
+       {      
+
+           return false;
+       }
+       if(std.rollno=="")
+       {
+         return false;
+       }
+       if(std.email=="")
+       {
+             return false;
+       }
+       if(std.marks=="")
+       {
+            return false;
+       }
+      else
+      {
+         return true;
+      }
+   }
+
+</script>
+
+</body>
+</html>

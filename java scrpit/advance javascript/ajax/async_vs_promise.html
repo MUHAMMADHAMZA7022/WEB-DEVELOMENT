@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        //promise ki trha hota ye promise mein resolve reject  ata is mein direct hum then or catch use kr skty
+        async function data(){
+            var a,b;
+            a="Hamza";
+            b="Ashraf";
+            var c=a+b;
+           return c;
+        }
+        data().then((result)=>
+        {
+            document.write(result);
+        });
+        data().catch((error)=>
+        {
+            document.write("ERROR:");
+        });
+    </script>
+</body>
+</html>

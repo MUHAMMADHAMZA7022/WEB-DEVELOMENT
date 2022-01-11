@@ -1,0 +1,17 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.row{
+    border: 10px solid red;
+}
+.col-12{
+    border: 4px solid blue;
+    
+}
+
+h1{
+    margin: 0px;
+    padding: 0px;
+    
+}

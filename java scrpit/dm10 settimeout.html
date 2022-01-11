@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #id{
+            width: 150px;
+            height: 150px;
+
+        }
+    </style>
+</head>
+<body>
+   <div id="id" onclick="abc" style="background-color: yellowgreen;">Hamza</div>
+    <script>
+//ye 1 dfa hi run ho ga
+//ye settime out 1 dfa run ho k ruk jaye ga same haset intval ki trha
+setTimeout(abc,3000)
+
+     function abc()
+     {
+        
+         var target;
+        target= document.getElementById("id");
+        target.style.width="250px";
+     }
+    </script>
+</body>
+</html>

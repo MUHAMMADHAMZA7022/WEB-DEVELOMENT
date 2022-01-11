@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+           class employee{
+            constructor()
+            {
+                document.write("Employee");
+            }
+        }
+        class manager extends employee{//ye inhertit ki ha class employe ki or constructor  sb sy phly managerka chly ga phir employe ka
+            constructor()
+            {
+                document.write("Manager");
+                super();//ye super use kr k hum ny employe ka construtor calls ki
+                //jo phly cal krna derived class ka os o  super likh k kr  lo aceess
+                
+            }
+           
+
+        }
+     
+        var a=new manager();//ye inheritance ki ha a object bna k hum dono class access kr skty
+    </script>
+</body>
+</html>

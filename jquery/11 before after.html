@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js.js"></script>
+</head>
+<body>
+<button id="btn-1">After</button>
+<button id="btn-2">Before</button>
+  <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos explicabo molestias perferendis numquam quasi optio quibusdam pariatur sit exercitationem sunt.</div>
+    <script>
+        //after before same ha pretend trha
+        $(document).ready(function()
+        {
+          $("#btn-1").click(function(){
+          $(".box1").after("<h1>Hamza Ashraf</h1>");///ye end py lga skty ha end py tag aye hga
+       
+          });
+
+
+          $("#btn-2").click(function(){
+          
+          $(".box1").before("<h1>Hamza Ashraf</h1>");///ye strt py lgta ha 
+          });
+      
+        });
+    </script>
+</body>
+</html>

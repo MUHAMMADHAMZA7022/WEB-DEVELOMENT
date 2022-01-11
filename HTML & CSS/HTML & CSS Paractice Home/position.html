@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position</title>
+    <style>
+        body{
+            background-image:url(g.png);
+            background-repeat: no-repeat;
+            background-size: 500px;
+            background-position:  center;
+           background-size: cover;
+           box-sizing: border-box;
+           background-color: rgb(28, 75, 77);
+           
+        }
+        .box{
+            border: 3px solid saddlebrown;
+            position: relative;
+            left: 35%;
+            bottom: -170px;
+            width: 500px;
+            min-height: 300px;
+            background-color: rgb(255, 0, 34);
+           
+            
+        }
+        
+        .h{
+            border: 3px solid seagreen;
+            width: 150px;
+            min-height: 100px;
+            text-align: center;
+            padding-top: 35px;
+            box-sizing: border-box;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+            background-color: aqua;
+            -moz-transition: width 2s, height 4s;
+            animation-name: sample;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            
+        }
+        .h:hover{
+            width: 300px;
+            height: 300px;
+            background-color:blue;
+        }
+        .a{
+            border: 3px solid rgb(139, 46, 46);
+            width: 150px;
+            min-height: 100px;
+            text-align: center;
+            padding-top: 35px;
+            box-sizing: border-box;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+            background-color: black;
+            animation-name: sample;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        .a:hover{
+            width: 300px;
+            height: 300px;
+            background-color:blue;
+        }
+        .m{
+            border: 3px solid rgb(211, 214, 35);
+            width: 150px;
+            min-height: 100px;
+            text-align: center;
+            padding-top: 35px;
+            box-sizing: border-box;
+            position: absolute;
+            left: 10px;
+            bottom: 10px;
+            background-color: springgreen;
+            animation-name: sample;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .m:hover{
+            width: 300px;
+            height: 300px;
+            background-color:blue;
+        }
+        .z{
+            border: 3px solid rgb(139, 91, 46);
+            width: 150px;
+            min-height: 100px;
+            text-align: center;
+            padding-top: 35px;
+            box-sizing: border-box;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            background-color: violet;
+            animation-name: sample;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+
+        }
+        .z:hover{
+            width: 300px;
+            height: 300px;
+            background-color:blue;
+        }
+        .aa{
+            border: 3px solid rgb(8, 6, 121);
+            width: 150px;
+            min-height: 100px;
+            text-align: center;
+            padding-top: 35px;
+            box-sizing: border-box;
+            position: absolute;
+            left: 175px;
+            bottom: 102px;
+            background-color: teal;
+            animation-name: sample;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+           
+        }
+        .aa:hover{
+            width: 300px;
+            height: 300px;
+            background-color:blue;
+        }
+        @keyframes sample {
+             from{
+                 border-radius:0%; color: black;
+             transform: scale(1);
+             }
+            to{
+                border-radius:100%;    color: aqua;
+                transform: scale(2);
+            }
+            }
+    </style>
+</head>
+<body>
+    <div class="box">
+       <div class="h">H</div>
+       <div class="a">A</div>
+       <div class="m">M</div>
+       <div class="z">Z</div>
+       <div class="aa">A</div>
+    </div>
+</body>
+</html>

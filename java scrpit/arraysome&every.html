@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //some ka mtlb ha comapre krna same if condtion bs function bnana hota
+        var a=[1,2,3,4,5];
+        var b=a.some(checkfun);
+        document.write(b);
+       function checkfun(age)
+        {
+            return age>=1;
+        }
+        //every function chceck krta mtlb sb true honi chaiye
+        var e=[1,2,3,4,5];
+        var w=e.every(checkff);
+        document.write(w);
+       function checkff(age)
+        {
+            return age==1;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js.js"></script>
+</head>
+<body>
+<button id="btn-1">Append</button>
+<button id="btn-2">pretend</button>
+  <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos explicabo molestias perferendis numquam quasi optio quibusdam pariatur sit exercitationem sunt.</div>
+    <script>
+        //appened end pretend start
+        $(document).ready(function()
+        {
+          $("#btn-1").click(function(){
+          $(".box1").append("<h1>Hamza Ashraf</h1>");///ye end py lga skty ha end py tag aye hga
+       
+          });
+
+
+          $("#btn-2").click(function(){
+          
+          $(".box1").prepend("<h1>Hamza Ashraf</h1>");///ye end py lgta ha 
+          });
+      
+        });
+    </script>
+</body>
+</html>

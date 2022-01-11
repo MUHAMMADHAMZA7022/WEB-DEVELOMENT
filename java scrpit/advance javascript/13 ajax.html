@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p">Hello EveryBody</p>
+    <button onclick="loaddata()">Click</button>
+        <script>
+           var loaddata=()=>//ye arrow function bnaya mein ny
+           {
+                var xhttp=new XMLHttpRequest();
+                xhttp.onreadystatechange=function(){
+                    if(this.readyState==4 && this.status==200)
+                    {
+                        document.getElementById("p").innerHTML=this.responseText;
+                    }
+                    else if(this.readyState==4 && this.status==404)
+                    {
+                        document.getElementById("p").innerHTML="File Not Found";
+                    }
+                }
+                xhttp.open('GET',"ajax/readme.txt",true)
+                xhttp.send();
+            }
+//404=file not found
+//403=forbidden problem
+//200=ok
+//0=request  not initialized
+//1=serve connect establish
+//2=request
+//3=processing request
+//4=request finished and response is ready
+        </script>
+    
+  
+</body>
+</html>

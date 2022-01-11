@@ -1,0 +1,30 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    min-width: 320px;
+    background: cover;
+    background-image: url(i.jpg);
+  
+}
+*{box-sizing: border-box;
+}
+.img{
+    width: 100px;
+}
+#wrapper{
+    display: inline-block;
+    vertical-align: top;
+    display: flex;
+    justify-content: center;
+
+}
+#login-page,#bill{
+    border: 10px;
+    border-color:crimson;
+    border-style: dashed;
+    justify-content: center;
+    text-align: center;
+    margin-top: 200px;
+ 
+    
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //1st method
+        //yaha object ka tareka chnge howa wa shortcut aya
+        let name="hamza";
+        let age="24";
+
+        var obj={
+            name,
+            age,
+        };
+        //yaha object use kiya value upar sy utha rha wo
+        document.write(obj.name+ "<br>" + obj.age);
+
+        //2nd Method
+        let n="name";
+        var obj={
+            [n]:"Muhammad Hamza",
+        };
+        document.write("<br>"+obj.name);
+        //yaha hum ny name sy hamza print krwaya ha
+
+        //3rd  Method
+        let m="name";
+        var obj={
+            [m]:"Muhammad Hamza",
+            detail(){//hum yaha function b lga skty mtlb function keyword b
+                return  `<br>${this.name}`
+            }
+        };
+         document.write(obj.detail())
+         document.write(obj[`detail`]())//aisy b hum krwa skty print ye new method ha 
+    </script>
+</body>
+</html>

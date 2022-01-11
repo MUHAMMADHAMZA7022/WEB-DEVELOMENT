@@ -1,0 +1,160 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+#wrap{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image:url(images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.header{
+    width: 85%;
+    margin: 0px 0px 0px 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.imgg{
+    width: 15%;
+    cursor: pointer;
+    
+}
+ button{
+     width: 100px;
+    
+    border: 1px solid #fff;
+    display: block;
+    color:white;
+    background-color: transparent;
+    padding: 12px 25px;
+    cursor: pointer;
+border-radius: 20px;
+}
+button:hover{
+    color:black;
+    background-color: white;
+}
+.content button{
+    width: 120px;
+    margin: 0px 0px 0px 30px;
+}
+.content{
+    width: 90%;
+    display: flex;
+   
+    flex-direction: column;
+   position: absolute;
+   left: 30px;
+   top: 200px;
+}
+small{
+    width: 180px;
+    margin: 0px 0px 0px 30px;
+    font-size: 1em;
+}
+h1{
+    width: 80%;
+    margin: 0px 0px 0px 20px;
+    font-size: 6em;
+    
+}
+.bubble{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -100px;
+    
+    
+}
+.bubble img{
+    
+    width: 5%;
+    animation: sample 7s linear infinite;
+
+}
+
+@keyframes sample{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    50%{
+       
+        opacity: 1;
+    }
+    70%{
+        
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-100vh);
+        opacity: 0;
+    }
+}
+.bubble img:nth-child(1){
+    animation-delay:1s ;
+    width 10px;
+}
+.bubble img:nth-child(2){
+    animation-delay:3s ;
+ width 15px;
+}
+.bubble img:nth-child(3){
+    animation-delay:5s ;
+ width 17px;
+}
+.bubble img:nth-child(4){
+    animation-delay:5.5s ;
+ width 18px;
+}
+.bubble img:nth-child(5){
+    animation-delay:6.5s ; 
+width 19px;
+
+}
+.bubble img:nth-child(6){
+    animation-delay:1s ;
+
+}
+.bubble img:nth-child(7){
+    animation-delay:8.8s ;
+}
+.bubble img:nth-child(8){
+    animation-delay:8s ;
+}
+.bubble img:nth-child(9){
+    animation-delay:2s ;
+}
+.navbar{
+    width: 60px;
+    height: 100vh;
+    background: linear-gradient(#00545d, #000729);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+   justify-content: space-around;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+   
+}
+.navbar img{
+    width: 30px;  
+    cursor:pointer;
+}
+.fb{
+    list-style-type: none;
+   
+}
+.fb li{
+    font-size: 50px;
+cursor:pointer;
+}

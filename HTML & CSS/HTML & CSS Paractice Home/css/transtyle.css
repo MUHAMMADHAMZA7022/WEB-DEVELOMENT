@@ -1,0 +1,41 @@
+.card{
+    width:30%;
+    height: 60%;
+    border: 0px solid rgb(56, 54, 54);
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    perspective: 800px;
+
+}
+.content{
+width: 100%;
+height: 100%;
+position: absolute;
+transition: transform 1s;
+transform-style: preserve-3d;
+
+}
+.content:hover{
+transform: rotatey(180deg);
+}
+.box1, .box2{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: rgb(53, 18, 18);
+    color: tomato;
+    font-size: 60px;
+    text-align: center;
+    line-height: 200px;
+    backface-visibility: hidden;
+    border-radius: 5px;
+    
+}
+.box2
+{
+    background:tomato;
+color:#fff;
+transform: rotatey(180deg);
+    
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js.js"></script>
+</head>
+<body>
+<button id="btn-1">position</button>
+<button id="btn-2">offset</button>
+
+<div class="box1"><h1>Hamza</h1><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus unde blanditiis quam culpa itaque tempora expedita et corrupti hic sapiente.</p></div>
+   <h1></h1>
+   <script>
+      //position
+        $(document).ready(function()
+    {
+        $("#btn-1").click(function()
+        {
+            var a;
+        a= $(".box1").position();
+        console.log(a);//ye hamein position btany k liye hota ha or console py print krwa rha position parent k according ata
+
+        });
+
+        $("#btn-2").click(function()
+        {
+            var a;
+        a= $(".box1").offset();
+        console.log(a);//ye offset document k according kam krta
+        
+        });
+
+        });
+    </script>
+</body>
+</html>

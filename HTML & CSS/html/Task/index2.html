@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="index.html">
+
+    <title>Gallery</title>
+    <style>
+        #com{
+            display: inline-blocks;
+            border-style: dashed;
+        }
+        body{
+            background-color: blueviolet;
+            display: inline-blocks;
+            text-align: center;
+        }
+        .imgs{
+            width: 100px;
+            height: 100px;
+        }
+        
+      #work{
+        width: 50%;
+         color:blue;
+        background-color:yellowgreen;
+        height: 20%;
+        padding-bottom: 20px;
+        text-align: center;
+        display: inline-block;
+        
+        
+      }
+      .frm{
+          margin-top: 10%;
+          border: 20px;
+          border-color: blue;
+          text-align: center;
+          flex-direction: column;
+          
+      }
+      #work1{
+          background-color:aqua;
+          float:right;
+          width: 50%;
+          
+         
+          
+      }
+      #unstyle{
+          list-style: none;
+          display: flex;
+          margin: 0px;
+          padding: 0px;
+          overflow: hidden;
+          
+          
+       }
+      .style{
+        display: inline-block;
+        vertical-align: top;
+        margin-right: 70px;
+       margin-left: 10px;
+        padding: 10px;
+        text-align: center;        
+      }
+      .sb{
+          margin-left: 20%;
+          
+      }
+      .unstyled-list1 a{
+    text-decoration: none;
+    text-shadow: none;
+    transition: all ease-in-out 0.3s;
+    color: #000;
+}
+.unstyled-list1 a:hover,
+.unstyled-list1 a:focus{
+    text-decoration: none;
+    text-shadow: none;
+    color: #000;
+    background-color: #fff;
+}
+    </style>
+</head>
+<body>
+    Company Registration Form<br><br>
+    <img src="g.png" class="imgs">
+      <div id="com">
+          <div class="d" ></div>
+          
+          
+          <form>
+              <label>Enter Your Name</label>
+              <input type="text" placeholder="Enter Your Name"><br>
+              <label>Enter Father Name</label>
+              <input type="text" placeholder="Enter Father Name"><br>
+              <label>Enter Email</label>
+              <input type="email" placeholder="Enter your email"><br>
+              <label>Enter password</label>
+              <input type="password" placeholder="Enter Your password"><br>
+              <label>Enter phone No</label>
+              <input type="number" placeholder="Enter Number"><br>
+              <label>Gender : </label>
+              Male<input type="radio" value="Male" name="Male">
+             Female <input type="radio" value="Female" name="Male"><br>
+             
+             <input type="button" value="Sign UP" ><br>
+          </form>
+      </div>
+</body>
+</html>

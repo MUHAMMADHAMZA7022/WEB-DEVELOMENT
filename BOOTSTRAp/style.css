@@ -1,0 +1,13 @@
+.container .mrg-pd{
+    border: 2px solid black;
+}
+.row{
+    border: 5px solid red;
+}
+
+.container-fluid{
+    border: 2px solid black;
+}
+.col{
+    border: 2px solid green;
+}

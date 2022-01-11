@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js.js"></script>
+</head>
+<body>
+    <div class="thead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta dolore ea odit, deserunt architecto beatae non ex suscipit impedit velit at laudantium, consectetur illo, delectus magni ducimus facilis accusamus. Labore?</div>
+    <script>
+//mouse event
+        $(document).ready(function()
+        {
+        //click event
+        $(".thead").click(function()
+        {
+           $(".thead").css("background-color","green")
+        });
+           //dbl event
+           $(".thead").dblclick(function()
+        {
+           $(".thead").css("background-color","blue")
+        });
+           //contextmenu event
+           $(".thead").contextmenu(function()
+        {
+           $(".thead").css("background-color","black")
+        });
+        //baki b sb aisy ho gy mouse hover etc
+        });
+    </script>
+</body>
+</html>

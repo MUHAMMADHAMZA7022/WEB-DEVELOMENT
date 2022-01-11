@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+       //promise mein hamein  4 chezein a jati first resolve and reject or agr resolve hoti to then agr ni to catch
+       let complete=false;
+       let name=new Promise(function(resolve,reject)
+       {
+
+          if(complete)
+          {
+             resolve("Successfull");  
+            
+            }
+          else
+          {
+             reject("Sorry:Reject");
+          }
+
+       });
+      console.log(name);
+   </script> 
+</body>
+</html>

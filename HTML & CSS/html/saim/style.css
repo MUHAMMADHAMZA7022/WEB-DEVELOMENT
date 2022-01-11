@@ -1,0 +1,114 @@
+/*-------------------------DEfault Style-----------------*/
+body{
+    margin: 0px;
+    padding: 0px;
+    min-width: 320px;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+  
+    background-image: url(pic.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+  
+   background-attachment: fixed;
+   
+}
+.unstyled{
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.clear-link{
+    text-decoration: none;
+    text-shadow: none;
+    transition: all ease-in-out 0.3s;
+    color: #000;
+}
+.clear-link:hover,
+.clear-link:focus{
+    text-decoration: none;
+    text-shadow: none;
+    color: #000;
+    background-color: #fff;
+}
+.pull-left{
+    float: left;
+}
+.pull-right{
+    float: right;
+}
+p,h1,h2,h3{
+    margin: 0px;
+    padding: 0px;
+}
+/*----------------------------Actual style---------------------------------*/
+#header{
+    padding: 30px 20px;
+    overflow: hidden;
+    background:transparent
+}
+.logo-holder{
+    width: 20%;
+}
+.social-icons{
+    width: 20%;
+    background:transparent
+}
+.menu-holder{
+    width: 60%;
+}
+.social-icons ul{
+    overflow: hidden;
+}
+.social-icons ul li a{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background: #000;
+}
+.social-icons ul.list-1 li:first-child{
+    float: left;
+}
+.social-icons ul.list-1 li:last-child{
+    float: right;
+}
+.social-icons ul.list-2{
+    text-align: center;
+}
+.social-icons ul.list-2 li{
+    display: inline-block;
+    vertical-align: top;
+}
+.social-icons ul.list-3 li:first-child{
+    float: left;
+}
+.social-icons ul.list-3 li:last-child{
+    float: right;
+}
+.menu-holder ul.menu{
+    overflow: hidden;
+    text-align: center;
+}
+.menu-holder ul.menu li{
+display: inline-block;
+vertical-align: top;
+margin-right: 10px;
+padding: 10px;
+background: #000;
+}
+.menu-holder ul.menu li a{
+    text-transform: uppercase;
+    color: #ddff55;
+    padding: 10px;
+    background: #000;
+}
+.menu-holder ul.menu li a:hover,
+.menu-holder ul.menu li a:focus{
+    color: #fff;
+    padding: 10px;
+    background: #000;
+}

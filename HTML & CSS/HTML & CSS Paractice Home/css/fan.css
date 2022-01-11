@@ -1,0 +1,81 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #63fc5e;
+}
+.head{
+    width:100%;
+    margin: 0px;
+    padding: 0px;
+   background-color: #8a2be2;
+   display: inline-block;
+  
+}
+
+.image{
+    width: 150px;
+    float: left; 
+    margin: 0px;
+    padding: 0px;
+    transform:translate(0,0);
+    transition: transform 2s;
+    transform: scale(1);
+    transform-origin: center top;
+}
+.img{
+    width: 100px;
+    padding: 20px;
+    float: right;
+}
+.image:hover{
+    transform:translate(50px,50px);
+    transform: scale(3);
+    
+}
+.navigation{
+   width: 70%;
+    float: left;
+}
+ul{
+    
+    list-style: none; 
+    margin: 0px;
+    
+}
+.nav li{
+    width: 130px;
+    height: 100px;
+    border: 10px solid rgb(14, 8, 4);
+    display:inline-block ;
+    border-radius: 0px;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left:  20px;
+    margin-top: 10px;
+    transform: rotate(0deg);
+    transition: transform 2s;
+  
+    
+}
+.nav li:hover{
+    transform: rotate(360deg);
+   
+}
+.fb .icon{
+   float: left;
+   margin-left:  35px;
+   margin-top: 25px;
+    padding: 0px;
+    font-size: 50px;
+    transform:translate(0,0);
+    transition: transform 2s;
+    transform: scale(1);
+    transform-origin: center top;
+}
+
+.icon:hover{
+    transform:translate(50px,50px);
+    transform: scale(2);
+    
+}

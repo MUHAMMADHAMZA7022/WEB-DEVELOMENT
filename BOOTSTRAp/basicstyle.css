@@ -1,0 +1,51 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(83, 89, 95);
+}
+/*
+.container{
+    border: 2px solid black;
+}
+.row{
+    border: 5px solid rgb(194, 132, 132);
+}
+
+.container-fluid{
+    border: 2px solid black;
+}
+.col, .col-12, .col-8, .col-4, .col-3 {
+    border: 2px solid green;
+}*/
+#header{
+    background-color: orange;
+}
+#menu{
+    background-color: cadetblue;
+}
+#menu ul{
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+}
+#menu ul li{
+    display: inline-block;
+  margin-right: 10px;
+}
+#sidebar{
+    background-color: rgb(150, 175, 184);
+}
+#sidebar ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+}
+#sidebar ul li{
+    margin: 20px;
+}
+#footer{
+    background-color: orange;
+}

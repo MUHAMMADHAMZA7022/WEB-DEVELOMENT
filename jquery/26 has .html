@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js.js"></script>
+ 
+</head>
+<body>
+
+
+<div class="box1"><h1>Hamza</h1><p>Lorem ipsum, dolor <b>hamza</b>sit amet consectetur adipisicing elit. Tempoha<b>
+    hamza
+</b>mzaribus unde blanditiis quam culpa itaque tempora expedita et corrupti hic sapiente.</p></div>
+<div>  <button id="btn-1">Has</button></div>
+  <script>
+      //has class kisi b tag ko likhoor chnging ya css kr lo 
+        $(document).ready(function()
+    {
+        $("#btn-1").click(function()
+        {
+            
+     $("p").has("b").css("background-color","green");
+        
+     
+        });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js.js"></script>
+</head>
+<body>
+   <div class="box1"><p>G</p><h1></h1><h2>Hamza</h2></div><br>
+   <button id="btn">Text</button>
+    <script>
+        //text
+        //html k liye get krny k liye jes tag ki krni ya value set krni yaha text wala kiya
+        $(document).ready(function()
+        {
+         $("#btn").click(function()
+         {
+            $(".box1 p").text("Hello Hamza");
+         });
+      //html
+      //ye html lagany k liye use hota
+
+ $("#btn").click(function()
+         {
+            $(".box1 h1").html("<b>Hamza</b>");
+         });
+         
+         //attribute
+         //yaha class add krni ya color ya kuch set krna
+         $("#btn").click(function()
+         {
+            $(".box1 h2").attr("class","box2");
+         });
+         //value form mein set hoti
+        });
+    </script>
+</body>
+</html>
